@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates HTML -->
+
+<html lang="en">
+    <head>
+
+        <title>hello, title</title>
+    </head>
+    <body>
+        <form onsumbit="greet(); return false;">
+        <input autocomplete="off" autofocus id="name" name="name" placeholder="Name" type="text">
+        <input type="submit">
+        </form>
+        <script>
+            function greet(event)
+            {
+                
+                alert('hello, ' + document.querySelector('#name').value);
+                event.preventDefault();
+            }
+            let form = document.querySelector('form');
+            form.addEbenListener('submit', greet);
+            </script>
+    </body>
+</html>

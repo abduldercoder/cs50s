@@ -1,0 +1,35 @@
+sort1 uses: Bubble Sort
+
+How do you know?
+random 50000 -> 632s
+random 10000 -> 207s
+reversed 10000 -> 206s
+reversed 50000 -> 279s
+sorted  50000 -> 665s
+sorted  10000 -> 070s
+
+sort2 uses: Merge Sort
+random 50000 -> 631s
+random 10000 -> 043s
+reversed 10000 -> 035s
+reversed 50000 -> 383s
+sorted 10000 -> 048s
+sorted 50000 -> 377s
+
+How do you know?:
+The runtime for sorted inputs is much faster than for reversed and random inputs.
+This is consistent with Bubble Sort, which has a time complexity of O(n²) in the worst case but can terminate early (O(n)) if the input is already sorted.
+
+
+sort3 uses: Selection Sort
+
+
+random 50000 -> 028s
+random 10000 -> 129s
+reversed 10000 -> 137s
+reversed 50000 -> 029s
+sorted 10000 -> 124s
+sorted 50000 -> 819s
+
+How do you know?: The runtime scales roughly as O(n log n), which is consistent with Merge Sort.
+Merge Sort performs well on all inputs, including reversed, random, and sorted

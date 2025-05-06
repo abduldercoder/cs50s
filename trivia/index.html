@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>what is the capital city of Austria? </h3>
+                 <button id = "answer1" > Paris </button>
+                 <button id = "answer2" > Vienna </button>
+                 <button id = "answer3" > Amsterdam </button>
+                 <P id = "feedback1"></P>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                 <h3>what is the capital city of France? </h3>
+                 <input type = "text" id = "answerInput">
+                 <button id = "submitButton">check answer</button>
+                 <p class= "feedback2"></p>
+            </div>
+        </div>
+         <script>
+            // TODO: Add code to check answers to questions
+            document.getElementById('answer1').addEventListener('click', function(){
+                this.style.backgroundColor = 'red';
+                document.getElementById('feedback1').textContent = 'incorrect';
+
+            });
+            document.getElementById('answer2').addEventListener('click', function(){
+                this.style.backgroundColor = 'green';
+                document.getElementById('feedback1').textContent = 'correct';
+
+            });
+            document.getElementById('answer3').addEventListener('click', function(){
+                this.style.backgroundColor = 'red';
+                document.getElementById('feedback1').textContent = 'incorrect';
+
+            });
+            document.querySelector('#submitButton').addEventListener('click', function(){
+                const userInput = document.querySelector('#answerInput').value.trim();
+                const correctAnswer = "Paris";
+                const feedback = document.querySelector('.feedback2');
+                if(userInput.toLowerCase() === correctAnswer.toLowerCase() ){
+                    feedback.textContent= "✅ Correct!";
+                    feedback.style.color = "green";
+                } else
+                {
+                    feedback.textContent = "❌ Incorrect. Try again!";
+                    feedback.style.color = "red";
+                }
+
+
+            });
+        </script>
+    </body>
+</html>

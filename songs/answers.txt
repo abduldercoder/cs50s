@@ -1,0 +1,48 @@
+the average of danceability is
+
++-------------------+
+| AVG(danceability) |
++-------------------+
+| 0.71646           |
++-------------------+
+
++--------------+
+| AVG(valence) |
++--------------+
+| 0.484443     |
++--------------+
+
++-------------+
+| AVG(energy) |
++-------------+
+| 0.65906     |
++-------------+
+
++------------+
+| AVG(tempo) |
++------------+
+| 119.90418  |
++------------+
+
++---------------+
+| AVG(loudness) |
++---------------+
+| -5.67764      |
++---------------+
+
++------------------+
+| AVG(speechiness) |
++------------------+
+| 0.115569         |
++------------------+
+
+Audio Aura Summary:
+- Danceability: 0.71646 (High)
+- Valence: 0.484443 (Neutral)
+- Energy: 0.65906 (Moderately High)
+- Tempo: 119.90418 BPM (Moderately Fast)
+- Loudness: -5.67764 dB (Loud)
+- Speechiness: 0.115569 (Very Low)
+
+Characterization:
+The listener enjoys danceable, energetic, and moderately fast-paced music with a balanced mix of happy and sad emotions. They prefer loud, impactful songs with minimal spoken words, indicating a preference for purely musical tracks in genres like pop, rock, or EDM.

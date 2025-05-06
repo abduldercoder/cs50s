@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+    {% endblock %}
+
+{% block main %}
+    <form action="register" method = "post">
+        <input autocomplete="off" autofocus class="form-control mb-2" name="username" placeholder="Username" type="text" required>
+        <input class="form-control mb-2" name="password" placeholder="Password" type="password" required>
+        <input class="form-control mb-2" name="confirmation" placeholder="Confirm Password" type="password" required>
+        <button class="btn btn-primary w-100" type="submit">Register</button>
+    </form>
+{% endblock %}
